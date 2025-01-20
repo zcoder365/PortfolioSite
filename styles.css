@@ -4,11 +4,12 @@
     --primary-white: #fafafa;
     
     /* create accent colors */
-    --accent-purple: #9933FF;
     --light-dark-grey: #404040;
+    --accent-purple: #9933FF;
+    --light-purple: rgba(153, 51, 255, 0.3);
     
     /* create fonts */
-    --font: "Andale Mono", sans-serif;
+    --header: "Andale Mono", sans-serif;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--header), var(--body);
     background-color: var(--primary-black);
     display: flex;
     flex-direction: column;
@@ -27,7 +28,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: var(--font);
+    font-family: var(--header);
     color: var(--accent-purple);
     margin-bottom: 1rem;
 }
@@ -39,7 +40,7 @@ h1 {
 }
 
 p {
-    font-family: var(--font);
+    font-family: var(--body);
     letter-spacing: 0;
     padding: 0;
     margin: 0;
@@ -91,6 +92,6 @@ p {
 .card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-purple);
-    box-shadow: 0 4px 12px rgba(153, 51, 255, 0.3);
+    box-shadow: 0 4px 12px var(--light-purple);
     background-color: #454545;
 }
