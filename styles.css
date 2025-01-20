@@ -128,3 +128,9 @@ p {
     box-shadow: 0 4px 12px var(--accent-light-purple);
     background-color: #454545;
 }
+
+.about-me-content {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
