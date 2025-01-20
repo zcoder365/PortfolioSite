@@ -10,7 +10,8 @@
     /* create accent colors */
     --light-dark-grey: #404040;
     --accent-purple: #9933FF;
-    --light-purple: rgba(153, 51, 255, 0.3);
+    --accent-light-purple: rgba(153, 51, 255, 0.3);
+    --accent-lighter-purple: rgba(153, 51, 255, 0.1);
     
     /* create fonts */
     --header: 'JetBrains Mono', monospace;
@@ -54,6 +55,24 @@ p {
 
 .header-content {
     padding: 50px;
+    margin-bottom: 2rem;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-purple);
+    box-shadow: 0 4px 6px var(--accent-lighter-purple);
+    transition: transform 0.3s ease;
+    background: linear-gradient(
+        to bottom,
+        var(--primary-black),
+        var(--light-dark-grey)
+    );
+    border-radius: 8px;
+
+    /* improve readability */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 .header-name {
@@ -101,6 +120,6 @@ p {
 .card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-purple);
-    box-shadow: 0 4px 12px var(--light-purple);
+    box-shadow: 0 4px 12px var(--accent-light-purple);
     background-color: #454545;
 }
