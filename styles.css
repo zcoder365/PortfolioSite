@@ -13,3 +13,13 @@
     --header-font: "Roboto", sans-serif;
     --body-font: "Rubik", sans-serif;
 }
+
+body {
+    font-family: var(--header-font), var(--body-font);
+    background-color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    color: var(--accent-purple);
+}
