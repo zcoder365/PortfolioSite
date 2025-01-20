@@ -1,0 +1,15 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* create primary colors */
+    --primary-black: #333333;
+    --primary-white: #fafafa;
+
+    /* create accent colors */
+    --accent-purple: #9933FF;
+
+    /* create fonts */
+    --header-font: "Roboto", sans-serif;
+    --body-font: "Rubik", sans-serif;
+}
