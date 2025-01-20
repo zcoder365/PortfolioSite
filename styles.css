@@ -10,6 +10,7 @@
     
     /* create fonts */
     --header: "Andale Mono", sans-serif;
+    --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html {
