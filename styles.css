@@ -7,8 +7,8 @@
     --accent-purple: #9933FF;
     
     /* create fonts */
-    --header-font: "Roboto", sans-serif;
-    --body-font: "Rubik", sans-serif;
+    --header-font: "Andale Mono", sans-serif;
+    --body-font: sans-serif;
 }
 
 html {
