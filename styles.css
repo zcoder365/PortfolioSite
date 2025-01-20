@@ -12,10 +12,7 @@
     --light-purple: rgba(153, 51, 255, 0.3);
     
     /* create fonts */
-    --heading-1: 'Fira Code', monospace; 
-    --heading-2: 'JetBrains Mono', monospace;
-    --heading-3: 'Space Mono', monospace;
-    --heading-4: 'IBM Plex Mono', monospace;
+    --header: 'JetBrains Mono', monospace;
 }
 
 html {
