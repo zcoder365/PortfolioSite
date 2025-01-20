@@ -13,6 +13,7 @@
     
     /* create fonts */
     --header: 'JetBrains Mono', monospace;
+    --body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 html {
