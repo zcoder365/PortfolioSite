@@ -30,5 +30,5 @@ body {
 h1, h2, h3 {
     font-family: var(--header-font);
     color: var(--accent-purple);
-    margin-bottom: 1rem; /* Add some spacing */
+    margin-bottom: 1rem;
 }
