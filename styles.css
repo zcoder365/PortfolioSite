@@ -5,6 +5,7 @@
     
     /* create accent colors */
     --accent-purple: #9933FF;
+    --light-dark-grey: #404040;
     
     /* create fonts */
     --font: "Andale Mono", sans-serif;
@@ -69,12 +70,20 @@ p {
 }
 
 .card {
+    /* width, padding, margin */
     width: 250px;
     padding: 1.5rem;
-    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+
+    /* border */
+    border: 1px solid var(--accent-purple);
     border-radius: 8px;
+
+    /* shadow and transitions */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shaddow 0.2s;
-    margin-bottom: 1rem;
-    background-color: var(--accent-purple);
+
+    /* coloring */
+    background-color: var(--light-dark-grey);
+    color: var(--primary-white);
 }
