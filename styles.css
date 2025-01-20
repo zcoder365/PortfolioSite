@@ -14,7 +14,7 @@
     
     /* create fonts */
     --header: 'JetBrains Mono', monospace;
-    --body: 'Inter', BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --body: 'Inter';
 }
 
 html {
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: var(--heading-1), var(--body);
+    font-family: var(--body);
     background-color: var(--primary-black);
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@ body {
 h1, h2, h3, h4, .header-name {
     color: var(--accent-purple);
     margin-bottom: 1rem;
+    font-family: var(--header);
 }
 
 h1, .header-name {
@@ -45,7 +46,7 @@ h1, .header-name {
 }
 
 p {
-    font-family: var(--header);
+    font-family: var(--body);
     letter-spacing: 0;
     padding: 0;
     margin: 0;
@@ -92,6 +93,9 @@ p {
     /* coloring */
     background-color: var(--light-dark-grey);
     color: var(--primary-white);
+
+    /* fonts */
+    font-family: var(--body);
 }
 
 .card:hover {
