@@ -35,7 +35,7 @@ h1, h2, h3, h4, .header-name {
     margin-bottom: 1rem;
 }
 
-h1 {
+h1, .header-name {
     font-family: var(--header);
     font-size: 2.5rem;
     letter-spacing: 0.05em;
