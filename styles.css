@@ -204,6 +204,12 @@ img {
     /* background-color: var(--primary-black); */
 }
 
+.header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* ul {
     list-style-position: inside;
     padding-left: 0;
