@@ -88,6 +88,12 @@ p {
     margin: 0;
 }
 
+.header-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
 .interests-skills {
     padding: 4rem;
 }
@@ -202,12 +208,6 @@ img {
     height: 50px;
     border-radius: 8px;
     /* background-color: var(--primary-black); */
-}
-
-.header-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
 
 /* ul {
