@@ -58,6 +58,7 @@ p {
     color: var(--primary-white);
     text-decoration: underline;
     font-weight: 700;
+    background-color: var(--primary-white);
 }
 
 .header-content {
