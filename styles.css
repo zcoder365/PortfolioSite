@@ -201,7 +201,7 @@ img {
     max-width: auto;
     height: 50px;
     border-radius: 8px;
-    background-color: var(--primary-black);
+    /* background-color: var(--primary-black); */
 }
 
 /* ul {
