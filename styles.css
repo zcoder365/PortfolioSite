@@ -198,7 +198,7 @@ p {
 }
 
 img {
-    max-width: 50px;
+    max-width: auto;
     height: 50px;
     border-radius: 8px;
     background-color: var(--primary-black);
