@@ -197,15 +197,15 @@ p {
     padding-top: 2rem;
 }
 
-ul {
+/* ul {
     list-style-position: inside;
     padding-left: 0;
     text-align: center;
-}
+} */
 
 /* If you want the bullet points themselves to align with the text */
-li {
+/* li {
     display: inline-block;
     text-align: left;
     width: 100%;
-}
+} */
