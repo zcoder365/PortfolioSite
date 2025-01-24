@@ -53,7 +53,7 @@ p {
     margin: 0;
 }
 
-a {
+.link {
     font-family: var(--body);
     color: var(--primary-white);
     text-decoration: underline;
