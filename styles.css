@@ -211,8 +211,9 @@ img {
 } */
 
 /* If you want the bullet points themselves to align with the text */
-li {
+/* li {
     display: block;
     text-align: center;
+    justify-self: center;
     width: auto;
-}
+} */
