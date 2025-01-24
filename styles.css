@@ -145,7 +145,7 @@ a {
     /* Base card styling */
     padding: 1.5rem;
     border-radius: 8px;
-    border: #9933FF 1px solid;
+    border: 2px solid #9933FF;
     background-color: var(--primary-white);
     box-shadow: 0 2px 4px var(--accent-lighter-purple);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
