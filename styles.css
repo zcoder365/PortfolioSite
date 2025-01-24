@@ -57,6 +57,7 @@ a {
     font-family: var(--body);
     color: var(--primary-white);
     text-decoration: underline;
+    font-weight: 700;
 }
 
 .header-content {
