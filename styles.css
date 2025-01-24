@@ -53,6 +53,12 @@ p {
     margin: 0;
 }
 
+a {
+    font-family: var(--body);
+    color: var(--primary-white);
+    text-decoration: underline;
+}
+
 .header-content {
     padding: 50px;
     margin-bottom: 2rem;
