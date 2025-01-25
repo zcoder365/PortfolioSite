@@ -232,3 +232,23 @@ li {
     justify-self: center;
     width: auto;
 }
+
+/* STYLES FOR TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th {
+    background-color: var(--accent-purple);
+    color: var(--primary-white);
+    font-weight: 700;
+}
+
+td {
+    background-color: var(--light-dark-grey);
+    color: var(--primary-white);
+    padding: 0.5rem;
+    text-align: center;
+}
