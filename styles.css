@@ -236,10 +236,11 @@ li {
 
 /* STYLES FOR TABLES */
 table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     margin: 30px;
     padding: 30px;
+    justify-self: center;
 }
 
 table th {
