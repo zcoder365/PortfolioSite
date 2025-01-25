@@ -239,15 +239,20 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 table th {
     font-weight: 700;
     color: var(--accent-purple);
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 table td {
     color: var(--primary-white);
     padding: 0.5rem;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
