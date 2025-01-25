@@ -246,7 +246,6 @@ th {
 }
 
 td {
-    background-color: var(--light-dark-grey);
     color: var(--primary-white);
     padding: 0.5rem;
     text-align: center;
