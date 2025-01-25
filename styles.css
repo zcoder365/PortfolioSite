@@ -240,12 +240,12 @@ table {
     margin-bottom: 1rem;
 }
 
-th {
+table th {
     font-weight: 700;
     color: var(--accent-purple);
 }
 
-td {
+table td {
     color: var(--primary-white);
     padding: 0.5rem;
     text-align: center;
