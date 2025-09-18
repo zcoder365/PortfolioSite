@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 
-app = Flask(__name__) # create flask app
+# create flask app
+app = Flask(__name__, template_folder="../templates/", static_folder="../static/")
 
 # create landing page/route
 @app.route('/')
