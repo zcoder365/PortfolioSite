@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Zoe Droulias</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="static/assets/coding-memoji.png" type="image/png">
-    </head>
+{% extends "base.html" %}
+{% block content %}
 
-    <body align="center">
-        <h3>Get to know</h3>
-        <h1>Online Boggle</h1>
+<h3>Get to know</h3>
+<h1>Online Boggle</h1>
 
-        <h2>About the Project</h2>
-        <p>This is a simple web app that creates a 5x5 Boggle board for users to look at while playing.</p>
+<h2>About the Project</h2>
+<p>This is a simple web app that creates a 5x5 Boggle board for users to look at while playing.</p>
 
-        <h2>The Interface</h2>
-        <img src="static/interfaces/boggle.png" alt="screenshot of promptl interface" style="width: 600px; height: auto;">
-    </body>
-</html>
+<h2>The Interface</h2>
+<img src="static/interfaces/boggle.png" alt="screenshot of promptl interface" style="width: 600px; height: auto;">
+
+{% endblock %}
