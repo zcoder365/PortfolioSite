@@ -261,3 +261,20 @@ table td {
     padding-right: 10px;
     vertical-align: top;
 }
+
+button {
+    background-color: var(--accent-purple);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    justify-content: baseline;
+}
+
+button:hover {
+    background-color: #7a00cc; /* Darker shade of purple on hover */
+}
