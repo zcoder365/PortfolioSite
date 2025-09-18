@@ -278,3 +278,11 @@ button {
 button:hover {
     background-color: #7a00cc; /* Darker shade of purple on hover */
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
