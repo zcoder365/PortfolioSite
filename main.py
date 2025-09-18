@@ -25,4 +25,4 @@ def read_more_fortunate_events():
 
 # run the app using port 5001
 if __name__ == '__main__':
-    app.run(port=5001)
+    app.run(debug=True, port=5001)
