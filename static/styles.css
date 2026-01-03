@@ -286,3 +286,9 @@ button:hover {
     padding: 20px;
     justify-content: center;
 }
+
+.project-card__languages {
+    font-size: 0.875rem;
+    color: var(--light-dark-grey);
+    margin-bottom: 0.5rem;
+}
