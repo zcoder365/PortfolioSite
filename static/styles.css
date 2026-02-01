@@ -55,10 +55,9 @@ p {
 
 .link {
     font-family: var(--body);
-    color: var(--primary-white);
+    color: var(--accent-purple);
     text-decoration: underline;
     font-weight: 700;
-    background-color: var(--primary-white);
 }
 
 .header-content {
