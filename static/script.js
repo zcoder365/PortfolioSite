@@ -33,8 +33,7 @@ reveals.forEach(el => observer.observe(el));
 const phrases = [
     'tech and creativity ✨',
     'code and storytelling 📖',
-    'data and design 📊',
-    'logic and music 🎶'
+    'data and design 📊'
 ];
 
 const typedTextElement = document.getElementById('typed-text');
