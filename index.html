@@ -1,222 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Zoe Droulias</title>
-        <link rel="stylesheet" href="static/styles.css">
-        <link rel="icon" href="static/assets/coding-memoji.png" type="image/png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe Droulias — CS Student & Builder</title>
+    
+    <!-- meta tags for SEO and social sharing -->
+    <meta name="description" content="Portfolio of Zoe Droulias — McGill Computer Science student, web developer, and creative builder. Currently building Lockd In and Friday Frenzies.">
+    <meta name="author" content="Zoe Droulias">
+    <meta property="og:title" content="Zoe Droulias — CS Student & Builder">
+    <meta property="og:description" content="Computer Science at McGill. Building things at the intersection of tech and creativity.">
+    <meta property="og:type" content="website">
+    
+    <!-- favicon and stylesheet -->
+    <link rel="icon" href="static/assets/coding-memoji.png" type="image/png">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
 
-    <body align="center">
-        <div class="header-content">
-            <img class="header-image" src="static/assets/coding-memoji.png" alt="Zoe's Memoji coding">
-            <p align="left">Hi, my name is</p><br>
-            <p class="header-name">Zoe Droulias.</p>
+<body>
+    <!-- sticky nav for jumping between sections -->
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="#top" class="nav-logo">zd.</a>
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#now">now</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
 
-            <br>
+    <main id="top">
+        <!-- hero section: first impression with animated entrance -->
+        <section class="hero">
+            <div class="hero-content reveal">
+                <img class="hero-image" src="static/assets/coding-memoji.png" alt="Zoe's memoji coding on a laptop">
+                
+                <p class="hero-greeting">hi, my name is</p>
+                <h1 class="hero-name">Zoe Droulias.</h1>
+                
+                <!-- typing cursor effect on tagline -->
+                <p class="hero-tagline">
+                    i build things at the intersection of <span class="highlight" id="typed-text"></span><span class="cursor">|</span>
+                </p>
+                
+                <!-- social/cv links -->
+                <div class="hero-links" aria-label="Social and CV links">
+                    <a href="https://www.linkedin.com/in/zoedroulias/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="static/assets/linkedin.png" alt="LinkedIn logo">
+                    </a>
+                    <a href="https://github.com/zcoder365" target="_blank" rel="noopener" aria-label="GitHub">
+                        <img src="static/assets/github.png" alt="GitHub logo">
+                    </a>
+                    <a href="static/assets/Zoe Droulias CV.pdf" target="_blank" rel="noopener" aria-label="View CV">
+                        <img src="static/assets/cv-icon.png" alt="CV document icon">
+                    </a>
+                </div>
 
-            <div class="links">
-                <a href="https://www.linkedin.com/in/zoedroulias/" target="_blank"><img src="static/assets/linkedin.png" alt="linkedin logo"></a>
-                <a href="https://github.com/zcoder365" target="_blank"><img src="static/assets/github.png" alt="github logo"></a>
-                <a href="static/assets/Zoe Droulias CV.pdf" class="links" target="_blank"><img src="static/assets/cv-icon.png" alt="document icon"></a>
+                <!-- scroll prompt -->
+                <a href="#about" class="scroll-prompt" aria-label="Scroll to about section">
+                    <span>scroll</span>
+                    <span class="arrow">↓</span>
+                </a>
             </div>
-        </div>
+        </section>
 
-        <div class="about-me">
-            <h2>About Me</h2>
-
-            <div class="about-me-content">
-                <p>I am a junior at McGill University, majoring in Computer Science with a minor in Communication Studies. I am passionate about creating useful tools at the intersection of tech and creativity.</p>
-
-                <br>
-
-                <p>My current interests lie in data science/analytics and web development.</p>
-
-                <br>
-
-                <p>View my GitHub, LinkedIn, and CV at the icons above! <br> View my highlighted projects, skills, and interests below.</p>
+        <!-- about me section: rewrite with personality -->
+        <section id="about" class="section reveal">
+            <h2 class="section-heading">about me</h2>
+            <div class="about-content">
+                <p>
+                    i'm a final-year <strong>computer science</strong> student at <strong>McGill University</strong>, with a minor in communication studies. i'm a creative generalist who lives somewhere between code, music, and words.
+                </p>
+                <p>
+                    when i'm not deep in a flask backend or chasing a stubborn css bug, you'll find me writing songs in logic pro, getting lost in a romantasy novel, or sketching out my next side project in notion.
+                </p>
+                <p>
+                    this summer i'm headed to <strong>NYC</strong> to join <strong>Citi</strong> as an application development summer analyst. i'm most excited about full-stack web dev, data science, and building tools that feel <em>good</em> to use.
+                </p>
             </div>
+        </section>
 
-        </div>
+        <!-- "now" section: live work-in-progress, super current -->
+        <section id="now" class="section reveal">
+            <h2 class="section-heading">currently building</h2>
+            <p class="section-subtitle">live work-in-progress projects 🚧</p>
+            
+            <div class="now-grid">
+                <article class="now-card">
+                    <div class="now-card-header">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span class="status-text">active</span>
+                    </div>
+                    <h3>Lockd In</h3>
+                    <p class="now-card-stack">Vanilla JS · Firebase · Firestore · Flask · Railway</p>
+                    <p class="now-card-desc">
+                        a mobile-first PWA for group scheduling — find when your friends are actually free without the doodle poll chaos. google auth, real-time availability sync, and a custom red accent palette.
+                    </p>
+                </article>
 
-        <br>
+                <article class="now-card">
+                    <div class="now-card-header">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span class="status-text">active</span>
+                    </div>
+                    <h3>Friday Frenzies</h3>
+                    <p class="now-card-stack">JavaScript · Firebase · Netlify · Resend</p>
+                    <p class="now-card-desc">
+                        a warm scrapbook-aesthetic app for a small friend group to share weekly highs and lows. scheduled serverless functions send email reminders so no one forgets to post.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-        <div class="my-projects">
-            <h2>My Projects</h2>
+        <!-- projects gallery: existing projects, redesigned dark cards -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-heading">my projects</h2>
+            <p class="section-subtitle">things i've shipped 💻</p>
 
             <div class="project-gallery">
-                <!-- Promptl Project Card -->
-                <div class="project-card">
-                    <div class="project-card__header">
-                        <img src="static/assets/promptl.png" alt="promptl lightbulb icon" style="width: 60px; height: 60px;">
-
-                        <h3 class="project-card__title">Promptl</h3>
-
-                        <a href="https://promptl.com" class="project-card__github-link" target="_blank">
-                            <i class="fab fa-github">Website</i>
+                <!-- Promptl -->
+                <article class="project-card">
+                    <div class="project-card__top">
+                        <img src="static/assets/promptl.png" alt="Promptl lightbulb icon" class="project-icon">
+                        <a href="https://promptl.com" class="project-card__link" target="_blank" rel="noopener" aria-label="Visit Promptl website">
+                            website ↗
                         </a>
                     </div>
+                    <h3 class="project-card__title">Promptl</h3>
+                    <p class="project-card__languages">Python · HTML · CSS · JavaScript · Flask · MongoDB · bcrypt</p>
+                    <p class="project-card__description">
+                        a web app to make writing fun and rewarding for kids with learning differences. interactive exercises and positive reinforcement help build writing skills in a supportive environment.
+                    </p>
+                </article>
 
-                    <p class="project-card__languages">Python • HTML • CSS • JavaScript • Flask • MongoDB • bcrypt</p>
+                <!-- Online Boggle -->
+                <article class="project-card">
+                    <div class="project-card__top">
+                        <img src="data:image/svg+xml,%3csvg stroke-width='1.5' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cdefs%3e%3cstyle%3e.b%7bfill:none%3bstroke:%239933FF%3bstroke-miterlimit:10%3b%7d%3c/style%3e%3c/defs%3e%3crect class='b' x='10.09' y='1.5' width='3.82' height='3.82'/%3e%3crect class='b' x='1.5' y='1.5' width='3.82' height='3.82'/%3e%3crect class='b' x='18.68' y='1.5' width='3.82' height='3.82'/%3e%3crect class='b' x='10.09' y='10.09' width='3.82' height='3.82'/%3e%3crect class='b' x='1.5' y='10.09' width='3.82' height='3.82'/%3e%3crect class='b' x='18.68' y='10.09' width='3.82' height='3.82'/%3e%3crect class='b' x='10.09' y='18.68' width='3.82' height='3.82'/%3e%3crect class='b' x='1.5' y='18.68' width='3.82' height='3.82'/%3e%3crect class='b' x='18.68' y='18.68' width='3.82' height='3.82'/%3e%3c/svg%3e" alt="3x3 grid icon" class="project-icon">
+                        <a href="https://github.com/zcoder365/Boggle" class="project-card__link" target="_blank" rel="noopener" aria-label="View Online Boggle on GitHub">
+                            github ↗
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">Online Boggle</h3>
+                    <p class="project-card__languages">Python · HTML · CSS</p>
+                    <p class="project-card__description">
+                        an interactive web version of the classic word-finding game. find words by connecting adjacent letters with smooth interaction and real-time feedback.
+                    </p>
+                </article>
 
-                    <p class="project-card__description">A web app to make writing fun and rewarding for kids with learning differences. Designed to provide an engaging and supportive environment that helps children develop their writing skills through interactive exercises and positive reinforcement.</p>
+                <!-- Friendship Bracelet Visualizer -->
+                <article class="project-card">
+                    <div class="project-card__top">
+                        <img src="static/assets/bracelet.png" alt="Friendship bracelet icon" class="project-icon">
+                        <a href="https://github.com/zcoder365/FriendshipBraceletVisualizer" class="project-card__link" target="_blank" rel="noopener" aria-label="View Friendship Bracelet Visualizer on GitHub">
+                            github ↗
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">Friendship Bracelet Visualizer</h3>
+                    <p class="project-card__languages">Python · HTML · CSS</p>
+                    <p class="project-card__description">
+                        a creative web app that helps crafters visualize bracelet designs before they make them. experiment with color combos and pattern styles — perfect for beginners and pros.
+                    </p>
+                </article>
 
-                    <!-- <a href="/read-more/promptl"><button>Read more...</button></a> -->
+                <!-- My Series of Fortunate Events -->
+                <article class="project-card">
+                    <div class="project-card__top">
+                        <img src="data:image/svg+xml,%3csvg stroke-width='1.5' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cdefs%3e%3cstyle%3e.b%7bfill:none%3bstroke:%239933FF%3bstroke-miterlimit:10%3b%7d%3c/style%3e%3c/defs%3e%3cpath class='b' d='M20.59 22.5H5.32A1.91 1.91 0 0 1 4 19.24a1.89 1.89 0 0 1 1.35-.56h15.24'/%3e%3cline class='b' x1='19.64' y1='18.68' x2='19.64' y2='22.5'/%3e%3cpath class='b' d='M20.59 1.5v17.18H5.32a1.91 1.91 0 0 0-1.91 1.91V3.41A1.92 1.92 0 0 1 5.32 1.5Z'/%3e%3cpolygon class='b' points='12 13.91 10.07 12.96 8.18 13.91 8.18 1.5 12 1.5 12 13.91'/%3e%3c/svg%3e" alt="Notebook icon" class="project-icon">
+                        <a href="https://github.com/zcoder365/MySeriesofFortunateEvents" class="project-card__link" target="_blank" rel="noopener" aria-label="View My Series of Fortunate Events on GitHub">
+                            github ↗
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">My Series of Fortunate Events</h3>
+                    <p class="project-card__languages">Python · HTML · CSS · JavaScript</p>
+                    <p class="project-card__description">
+                        a journaling app that lets users record events and rate their positivity 1-10. designed to help users find more positivity by reviewing the year that's been.
+                    </p>
+                </article>
+
+                <!-- Goodreads Book Trend Analysis -->
+                <article class="project-card">
+                    <div class="project-card__top">
+                        <img src="https://img.icons8.com/ios/250/9933FF/journal.png" alt="Journal icon" class="project-icon">
+                        <a href="https://github.com/zcoder365/BookAnalysis" class="project-card__link" target="_blank" rel="noopener" aria-label="View Book Analysis on GitHub">
+                            github ↗
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">Goodreads Book Trend Analysis</h3>
+                    <p class="project-card__languages">Python · Selenium · Beautiful Soup · CSV · re</p>
+                    <p class="project-card__description">
+                        scraped and analyzed 1200 popular books from goodreads (2020-2025), revealing declining platform engagement and cyclical genre preferences. includes stats, viz, and a written report.
+                    </p>
+                </article>
+
+                <!-- McBurn -->
+                <article class="project-card">
+                    <div class="project-card__top">
+                        <img src="https://img.icons8.com/ios/250/9933FF/dashboard.png" alt="Dashboard icon" class="project-icon">
+                        <a href="https://github.com/zcoder365/McBurn-McHacks13" class="project-card__link" target="_blank" rel="noopener" aria-label="View McBurn on GitHub">
+                            github ↗
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">McBurn</h3>
+                    <p class="project-card__languages">Python · HTML · CSS · Flask · SQLite</p>
+                    <p class="project-card__description">
+                        a flask web app that detects and prevents student burnout before it gets critical. combines machine learning, lifestyle tracking, and ai feedback to help mcgill students thrive. built at mchacks 13.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- skills section: tag grid instead of table for modern feel -->
+        <section id="skills" class="section reveal">
+            <h2 class="section-heading">skills & toolkit</h2>
+            <p class="section-subtitle">things i can do, and tools i reach for 🛠️</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
                 </div>
 
-                <!-- boggle project card -->
-                <div class="project-card">
-                    <div class="project-card__header">
-                        <img src="data:image/svg+xml,%3csvg stroke-width='1.5' id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cdefs%3e%3cstyle%3e.cls-6nrmripjxcqmjhqlrrdbcf-1%7bfill:none%3bstroke:%23333333%3bstroke-miterlimit:10%3b%3b%7d%3c/style%3e%3c/defs%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='10.09' y='1.5' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='1.5' y='1.5' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='18.68' y='1.5' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='10.09' y='10.09' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='1.5' y='10.09' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='18.68' y='10.09' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='10.09' y='18.68' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='1.5' y='18.68' width='3.82' height='3.82'/%3e%3crect class='cls-6nrmripjxcqmjhqlrrdbcf-1' x='18.68' y='18.68' width='3.82' height='3.82'/%3e%3c/svg%3e" alt="brain black outline icon" style="width: 50px; height: 50px;">
-
-                        <h3 class="project-card__title">Online Boggle</h3>
-
-                        <a href="https://github.com/zcoder365/Boggle" class="project-card__github-link" target="_blank">
-                            <i class="fab fa-github">GitHub</i>
-                        </a>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">frameworks & libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">NoSQL</span>
                     </div>
-
-                    <p class="project-card__languages">Python • HTML • CSS</p>
-
-                    <p class="project-card__description">An interactive web-based version of the classic word-finding game Boggle. Designed to allow players to find words by connecting adjacent letters. The game provides an engaging experience with smooth user interaction and real-time feedback as players discover words.</p>
-
-                    <!-- <a href="/read-more/boggle"><button>Read more...</button></a> -->
                 </div>
 
-                <!-- friendship bracelet visualizer project card -->
-                <div class="project-card">
-                    <div class="project-card__header">
-                        <img src="static/assets/bracelet.png" alt="friendship bracelet icon black" style="width: 50px; height: 50px;">
-
-                        <h3 class="project-card__title">Friendship Bracelet Visualizer</h3>
-
-                        <a href="https://github.com/zcoder365/FriendshipBraceletVisualizer" class="project-card__github-link" target="_blank">
-                            <i class="fab fa-github">GitHub</i>
-                        </a>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">tools & platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Railway</span>
+                        <span class="skill-tag">Netlify</span>
+                        <span class="skill-tag">Render</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">AWS LightSail</span>
                     </div>
-
-                    <p class="project-card__languages">Python • HTML • CSS</p>
-
-                    <p class="project-card__description">A creative web application that helps crafters visualize their friendship bracelet designs. Designed to provide experimentation with different color combinations and pattern styles. Perfect for both beginners and experienced crafters.</p>
-
-                    <!-- <a href="/read-more/friendship-bracelet-visualizer"><button>Read more...</button> -->
                 </div>
 
-                <!-- my series of fortunate events -->
-                <div class="project-card">
-                    <div class="project-card__header">
-                        <img src="data:image/svg+xml,%3csvg stroke-width='1.5' id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cdefs%3e%3cstyle%3e.cls-0loaqqr1wk2vrsv2s5s8vm-1%7bfill:none%3bstroke:%23333333%3bstroke-miterlimit:10%3b%3b%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-0loaqqr1wk2vrsv2s5s8vm-1' d='M20.59 22.5H5.32A1.91 1.91 0 0 1 4 19.24a1.89 1.89 0 0 1 1.35-.56h15.24'/%3e%3cline class='cls-0loaqqr1wk2vrsv2s5s8vm-1' x1='19.64' y1='18.68' x2='19.64' y2='22.5'/%3e%3cpath class='cls-0loaqqr1wk2vrsv2s5s8vm-1' d='M20.59 1.5v17.18H5.32a1.91 1.91 0 0 0-1.91 1.91V3.41A1.92 1.92 0 0 1 5.32 1.5Z'/%3e%3cpolygon class='cls-0loaqqr1wk2vrsv2s5s8vm-1' points='12 13.91 10.07 12.96 8.18 13.91 8.18 1.5 12 1.5 12 13.91'/%3e%3c/svg%3e" alt="notebook with a heart icon" style="width: 50px; height: 50px;">
-
-                        <h3 class="project-card__title">My Series of Fortunate Events</h3>
-
-                        <a href="https://github.com/zcoder365/MySeriesofFortunateEvents" class="project-card__github-link" target="_blank">
-                            <i class="fab fa-github">GitHub</i>
-                        </a>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">coursework</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures & Algorithms</span>
+                        <span class="skill-tag">Software Design</span>
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">Theory of Computation</span>
+                        <span class="skill-tag">NLP & Data Science</span>
+                        <span class="skill-tag">Discrete Structures</span>
                     </div>
-
-                    <p class="project-card__languages">Python • HTML • CSS • JavaScript</p>
-
-                    <p class="project-card__description">A journaling app that lets users record events and rate their positivity on a scale of 1 to 10. Designed to get users to be more positive as they review their events in the last year.</p>
-
-                    <!-- <a href="/read-more/my-series-of-fortunate-events"><button>Read more...</button></a> -->
                 </div>
 
-                <!-- book trend analysis data science project -->
-                <div class="project-card">
-                    <div class="project-card__header">
-                        <img src="https://img.icons8.com/ios/250/000000/journal.png" alt="" style="width: 50px; height: 50px;">
-
-                        <h3 class="project-card__title">Goodreads Book Trend Analysis</h3>
-
-                        <a href="https://github.com/zcoder365/BookAnalysis" class="project-card__github-link" target="_blank">
-                            <i class="fab fa-github">GitHub</i>
-                        </a>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">interests</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">data science</span>
+                        <span class="skill-tag">web dev</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">music production</span>
+                        <span class="skill-tag">songwriting</span>
                     </div>
-
-                    <p class="project-card__languages">Python • Selenium • Beautiful Soup • CSV • re</p>
-
-                    <p class="project-card__description">Scraped and analyzed 1200 popular books from Goodreads (2020-2025), revealing declining platform engagement and cyclical genre preferences. Includes statistical analysis, data visualizations, and a comprehensive written report.</p>
-
-                    <!-- <a href="/read-more/my-series-of-fortunate-events"><button>Read more...</button></a> -->
-                </div>
-
-                <!-- McBurn card -->
-                <div class="project-card">
-                    <div class="project-card__header">
-                        <img src="https://img.icons8.com/ios/250/000000/dashboard.png" alt="warning triangle" style="width: 60px; height: 60px;">
-
-                        <h3 class="project-card__title">McBurn</h3>
-
-                        <a href="https://github.com/zcoder365/McBurn-McHacks13" class="project-card__github-link" target="_blank">
-                            <i class="fab fa-github">GitHub</i>
-                        </a>
-                    </div>
-
-                    <p class="project-card__languages">Python • HTML • CSS • Flask • SQLite</p>
-
-                    <p class="project-card__description">A Flask-based web application designed to detect and prevent student burnout before it becomes critical. McBurn combines machine learning, lifestyle tracking, and AI-powered feedback to help McGill students maintain their wellbeing and academic success.</p>
-
-                    <!-- <a href="/read-more/promptl"><button>Read more...</button></a> -->
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="skills">
-            <h2>My Skills and Interests</h2>
+        <!-- contact / footer section -->
+        <section id="contact" class="section reveal">
+            <h2 class="section-heading">let's connect</h2>
+            <p class="section-subtitle">always down to chat about code, music, or romantasy book recs ✨</p>
+            
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/zoedroulias/" target="_blank" rel="noopener" class="contact-button">
+                    LinkedIn ↗
+                </a>
+                <a href="https://github.com/zcoder365" target="_blank" rel="noopener" class="contact-button">
+                    GitHub ↗
+                </a>
+                <a href="static/assets/Zoe Droulias CV.pdf" target="_blank" rel="noopener" class="contact-button">
+                    Download CV ↗
+                </a>
+            </div>
+        </section>
+    </main>
 
-            <p>Here are some of the skills I have developed through my courses and projects:</p>
+    <!-- footer -->
+    <footer class="footer">
+        <p>© 2026 Zoe Droulias · built with care in Montreal 💜</p>
+    </footer>
 
-            <table>
-                <tr>
-                    <th>Courses</th>
-                    <th>Interests</th>
-                    <th>Programming</th>
-                    <th>Apps and Websites</th>
-                </tr>
-                <tr>
-                    <td>
-                        Intro to Computer Science <br>
-                        Intro to Software Systems <br>
-                        Intro to Computer Systems <br>
-                        Intro to Data Science <br>
-                        Data Structures and Algorithms <br>
-                        Discrete Structures and Algorithms<br>
-                        Programming Challenges <br>
-                        Software Design<br>
-                        Web Development <br>
-                        Natural Language to Data Science
-                    </td>
-
-                    <td>
-                        Data Science <br>
-                        Web Development <br>
-                        UI/UX
-                    </td>
-
-                    <td>
-                        Python <br>
-                        Java <br>
-                        HTML <br>
-                        CSS <br>
-                        C++ <br>
-                        Pandas <br>
-                        NumPy <br>
-                        Matplotlib <br>
-                        Seaborn <br>
-                        SQL <br>
-                        NoSQL
-                    </td>
-
-                    <td>
-                        Tableau <br>
-                        GitHub <br>
-                        AWS LightSail <br>
-                        VS Code <br>
-                        Microsoft Office <br>
-                        Google Suite <br>
-                        Canva
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </body>
+    <!-- script for animations and interactivity -->
+    <script src="static/script.js"></script>
+</body>
 </html>
