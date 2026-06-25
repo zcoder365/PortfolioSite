@@ -156,7 +156,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-md);
+    padding: 6rem var(--space-md) var(--space-md);
     text-align: center;
 }
 
