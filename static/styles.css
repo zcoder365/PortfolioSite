@@ -342,6 +342,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-sm);
+    max-width: 520px;
 }
 
 .now-card {
